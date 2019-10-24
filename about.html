@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesome - All CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <!-- jQuery - Compiled and minified CSS -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase JS Reference --> 
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- Google fonts Open Sans Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    <!-- Customized Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Visitors Page</title>
+      
+    
+      
+  </head>
+    
+  <body >
+    
+    <!-- Navigation component -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+      <!-- All the navigation bar content goes here -->
+        <a href="#" class="navbar-brand"><i class="fas fa-file-medical-alt mr-2" aria-hidden="true"></i>VMS Dashboard</a>
+        <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav" id="navScrollspy">
+              <li class="nav-item"><a href="#section-jumbotron" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#section-visitors" class="nav-link active">Visitors</a></li>
+              <li class="nav-item"><a href="#section-overview" class="nav-link">Visitor Overview</a></li>
+              <li class="nav-item"><a href="#section-reports" class="nav-link">Reports</a></li>
+              <li class="nav-item"><a href="#section-education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#section-reviews" class="nav-link">Reviews</a></li>
+            </ul>
+        
+        </div>
+    </nav>
+   <!-- Navigation bar : END-->
+      
+   <!-- Main content : BEGIN-->
+      
+    <div class="container my-3 my-sm-5">
+        <div class="mb-sm-4">
+            <h2 class="text-center mb-sm-4">Our story</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. </p>
+            <p>Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+            <p>In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. </p>
+        </div>
+        
+        <div class="mb-sm-4">
+            <h2 class="text-center mb-sm-4">Our office</h2> 
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <figure class="figure">
+                        <img src="img/office.jpg" class="figure-img img-fluid" alt="Figure image">
+                        <figcaption class="figure-caption small">
+                            <p class="font-italic mb-0">Photo by: Photographer Name</p>
+                            <p class="mb-0">Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <figure class="figure">
+                        <img src="img/office3.jpg" class="figure-img img-fluid" alt="Figure image">
+                        <figcaption class="figure-caption small">
+                            <p class="font-italic mb-0">Photo by: Photographer Name</p>
+                            <p class="mb-0">Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-sm-4">
+        
+            <h2 class="text-center mb-sm-4">Our clients</h2> 
+
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-3">
+                    <img src="img/our-clients.png" class="img-fluid" alt="Client image">
+                </div>
+            </div>
+        </div>
+        
+    </div>        
+      
+      
+   <!-- Main content : END-->
+   
+   
+   <section id="section-newsletter" class="bg-secondary ">
+        <div class="container">
+          <form class="py-5 text-white">
+            <h2 class="text-center">Sign-up for our newsletter</h2>
+            <p>Receive our latest news and offers by signing up to our newsletter.</p>
+              <div class="row">
+                  <div class="col-12 col-sm-6"> 
+                      <div class="form-group">
+                          <label for="input-name" class="sr-only">Your name:</label>
+                          <input type="text" class="form-control" placeholder="Firstname Lastname" id="input-name">
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6">  
+                      <div class="form-group">
+                          <label for="input-email" class="sr-only">Your email:</label>
+                          <input type="email" class="form-control" placeholder="email@example.com" id="input-email">
+                      </div>
+                  </div>
+              </div>
+                  <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" id="input-terms">
+                          I have read and accept the <a href="#" data-toggle="modal" data-target="#modal">terms and conditions</a>.
+                      </label>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <small class="form-text">You can unsubscribe from the mailing list at any time.</small>
+                      <button type="submit" class="btn btn-dark">Sign up</button>
+                  </div>
+              
+          </form>
+            
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="modalTitle">Terms and conditions</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. </p>
+                      <p>In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. </p>
+                      <p>Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. </p>
+                      <p>In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+        
+        
+        
+        
+    
+          
+      <footer class="bg-light">
+          <div class="container py-3 py-sm-5">
+            <div class="row justify-content-center ">
+                <div class="col-12 col-sm-6 col-lg-3">
+                      <h6>Quick links</h6>      
+                      <ul class="list-unstyled ">
+                          <li class="list-unstyled-item"><a href="#" >Home</a></li>
+                          <li class="list-unstyled-item"><a href="#" >What's new?</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Support</a></li>
+                          <li class="list-unstyled-item"><a href="#" >My account</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Unsubscribe</a></li>
+                      </ul>
+                 </div>
+                
+                 <div class="col-12 col-sm-6 col-lg-3 ">
+                      <h6>Information</h6>      
+                      <ul class="list-unstyled ">
+                          <li class="list-unstyled-item"><a href="#" >About us</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Jobs</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Press info</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Contact</a></li>
+                          <li class="list-unstyled-item"><a href="#" >Partnership</a></li>
+                      </ul>
+                 </div>
+                
+                 <div class="col-12 col-sm-6 col-lg-3 ">
+                      <h6>Follow us</h6>      
+                      <ul class="list-unstyled ">
+                          <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-facebook mr-2" aria-hidden="true"></i>Facebook</a></li>
+                          <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-instagram mr-2" aria-hidden="true"></i>Instagram</a></li>
+                          <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-twitter mr-2" aria-hidden="true"></i>Twitter</a></li>
+                          <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-youtube mr-2" aria-hidden="true"></i>YouTube</a></li>
+                          <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-linkedin mr-2" aria-hidden="true"></i>LinkedIn</a></li>
+                      </ul>
+                 </div>
+                
+                 <div class="col-12 col-sm-6 col-lg-3 ">
+                      <h6>Our location:</h6>      
+                      <address>
+                          <strong>VMS Works</strong><br>
+                          7000 SW 23rd St<br>
+                          Miami, FL 33155<br>
+                          <i class="fa fa-phone mr-1"></i><a href="tel:+12127363100">(786) 736-3100</a><br>
+                          <i class="fa fa-inbox mr-1"></i><a href="mailto:info@domain.com">info@vmsworks.com</a><br>
+                      </address>
+                  </div> 
+              </div>
+              
+              <div class="row justify-content-center">
+                  
+                  <div class="col-12 col-sm-6 col-lg-9">
+                      <ul class="list-inline ">
+                          <li class="list-inline-item">&copy; 2019 VMS Works, Inc.</li>
+                          <li class="list-inline-item">All rights reserved.</li>
+                          <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a></li>
+                      </ul>
+                  </div>
+                  
+                  <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="dropdown dropup">
+                          <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-language mr-2" aria-hidden="true"></i>Change language</button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a href="#" class="dropdown-item small px-1">English</a>
+                              <a href="#" class="dropdown-item small px-1">Spanish</a>
+                              <a href="#" class="dropdown-item small px-1">French</a>
+                              <a href="#" class="dropdown-item small px-1">German</a>
+                          </div>
+                      </div>
+                  </div>                              
+              </div>
+          </div>
+          
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           
+      
+    <script type="text/javascript">
+    
+    </script>
+   
+  </body>
+</html>

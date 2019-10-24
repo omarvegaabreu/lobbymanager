@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesome - All CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <!-- jQuery - Compiled and minified CSS -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase JS Reference --> 
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- Google fonts Open Sans Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    <!-- Customized Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Dashboard Page</title>
+      
+    
+      
+  </head>
+    
+  <body >
+    
+    <!-- Navigation component -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+      <!-- All the navigation bar content goes here -->
+        <a href="index.html" class="navbar-brand"><i class="fas fa-file-medical-alt mr-2" aria-hidden="true"></i>VMS Dashboard</a>
+        <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav" id="navScrollspy">
+              <li class="nav-item"><a href="start.html" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="visitors.html" class="nav-link">Visitors</a></li>
+              <li class="nav-item"><a href="overview.html" class="nav-link">Visitor Overview</a></li>
+              <li class="nav-item"><a href="reports.html" class="nav-link">Reports</a></li>
+              <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+             </ul>
+        
+        </div>
+    </nav>
+    
+    <!-- Jumbotron component -->
+    <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+          <h3 class="display-3 display-sm-4 text-uppercase" id="heading">Visitor Management System</h3>
+          <h4 class="d-none d-sm-block text-info">The Best Way to Manage Your Visitors</h4>
+          <p class="lead text-secondary">Welcome visitors to your office. Boost productivity with a fast check-in process. Notify the front desk and medical staff of their guests with a smart, simple and secure system.</p>
+          <p class="lead text-secondary">Collect and store visitors data and demographic information to help you improve your visitors experience.</p>
+          <p><strong>Download now on:</strong></p>
+          <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-app-store mr-2" aria-hidden="true"></i>App Store</a>
+          <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-google-play mr-2" aria-hidden="true"></i>Google Play</a>
+      </div>
+    </section>
+        
+   
+      
+    <div class="container my-5"> 
+          <!-- Description component -->
+          <section id="section-about" class="my-2">
+            <h5 class="display-5 text-center">What is VMS?</h5>
+            <p>Visitor Management System  is an innovative digital app that makes your visitors truly welcome. It boots productivity with a fast check-in process, notifying employees of visitor arrivals and activity.</p>
+            <p>VMS maximizes your front desk’s efficiency by allowing the receptionist to work on other important projects while your visitors sign themselves in with the Sign in App. Provides immediate arrival notification.</p>
+          </section>
+        
+    </div>    
+   
+        
+    <footer class="bg-light">
+        <div class="container py-3 py-sm-5">
+          <div class="row justify-content-center ">
+              <div class="col-12 col-sm-6 col-lg-3">
+                    <h6>Quick links</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" >Home</a></li>
+                        <li class="list-unstyled-item"><a href="#" >What's new?</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Support</a></li>
+                        <li class="list-unstyled-item"><a href="#" >My account</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Unsubscribe</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Information</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" >About us</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Jobs</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Press info</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Contact</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Partnership</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Follow us</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-facebook mr-2" aria-hidden="true"></i>Facebook</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-instagram mr-2" aria-hidden="true"></i>Instagram</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-twitter mr-2" aria-hidden="true"></i>Twitter</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-youtube mr-2" aria-hidden="true"></i>YouTube</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-linkedin mr-2" aria-hidden="true"></i>LinkedIn</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Our location:</h6>      
+                    <address>
+                        <strong>VMS Works</strong><br>
+                        7000 SW 23rd St<br>
+                        Miami, FL 33155<br>
+                        <i class="fa fa-phone mr-1"></i><a href="tel:+12127363100">(786) 736-3100</a><br>
+                        <i class="fa fa-inbox mr-1"></i><a href="mailto:info@domain.com">info@vmsworks.com</a><br>
+                    </address>
+                </div> 
+            </div>
+            
+            <div class="row justify-content-center">
+                
+                <div class="col-12 col-sm-6 col-lg-9">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">&copy; 2019 VMS Works, Inc.</li>
+                        <li class="list-inline-item">All rights reserved.</li>
+                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="dropdown dropup">
+                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-language mr-2" aria-hidden="true"></i>Change language</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#" class="dropdown-item small px-1">English</a>
+                            <a href="#" class="dropdown-item small px-1">Spanish</a>
+                            <a href="#" class="dropdown-item small px-1">French</a>
+                            <a href="#" class="dropdown-item small px-1">German</a>
+                        </div>
+                    </div>
+                </div>                              
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/api.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js" integrity="sha256-MhIEydYjM8X/lfw31uxgXHB5BCo+bQX6BmFJYmzty7w=" crossorigin="anonymous"></script>
+      
+   
+  </body>
+</html>

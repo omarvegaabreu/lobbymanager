@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesome - All CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <!-- jQuery - Compiled and minified CSS -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase JS Reference --> 
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- Google fonts Open Sans Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    <!-- Customized Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Visitor Overview</title>
+      
+    
+      
+  </head>
+    
+  <body >
+    
+    <!-- Navigation component -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+      <!-- All the navigation bar content goes here -->
+        <a href="#" class="navbar-brand"><i class="fas fa-file-medical-alt mr-2" aria-hidden="true"></i>VMS Dashboard</a>
+        <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav" id="navScrollspy">
+              <li class="nav-item"><a href="start.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="visitors.html" class="nav-link">Visitors</a></li>
+              <li class="nav-item"><a href="overview.html" class="nav-link active">Visitor Overview</a></li>
+              <li class="nav-item"><a href="reports.html" class="nav-link">Reports</a></li>
+              <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+            </ul>
+        
+        </div>
+    </nav>
+      
+      
+    <div class="container my-5"> 
+        <!-- Showcase component -->
+        <section id="section-overview" class="my-2">
+            <!-- <h5 class="display-5 text-center">Visitor Overview</h5> -->
+            <div class="row">
+                <div class="col-md-3 ">
+                  <div class="card card-info">
+                    <div class="card-body p-0">
+                      <div class="list-group">
+                            <h5 class="display-5 mt-0 card-title bg-info text-white list-group-item list-group-item-action">Visitor Overview</h5>
+                            <a href="#" class="list-group-item list-group-item-action active">Visitor Basic Info</a>
+                            <a href="#" class="list-group-item list-group-item-action">Demographics</a>
+                            <a href="#" class="list-group-item list-group-item-action">Address</a>
+                            <a href="#" class="list-group-item list-group-item-action">Contact Details</a>
+                            <a href="#" class="list-group-item list-group-item-action">Appointments</a>
+                            <a href="#" class="list-group-item list-group-item-action">Clinical Info</a>
+                            <a href="#" class="list-group-item list-group-item-action">Additional Info</a>
+                            <a href="#" class="list-group-item list-group-item-action">History</a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6>Visitor Basic Info</h6>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    
+                                    <form class="formData" method="GET">
+                                          
+                                          <div class="form-group row">
+                                            <label id="firstName-display" for="firstName-display" class="col-4 col-form-label">First Name</label> 
+                                            <div class="col-8">
+                                              <input id="firstName-display" name="firstName-display"  class="form-control here" type="text" >
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="lastName-display" class="col-4 col-form-label">Last Name</label> 
+                                            <div class="col-8">
+                                              <input id="lastName-display" name="lastName-display" class="form-control here" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="phone-display" class="col-4 col-form-label">Phone</label> 
+                                            <div class="col-8">
+                                              <input id="phone-display" name="phone-display"  class="form-control here" required="required" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="reason-display" class="col-4 col-form-label">Reason for visit</label> 
+                                            <div class="col-8">
+                                              <select class="browser-default mt-3 bg-light rounded" name="reason-display" id="reason-display">
+                                                <option selected>Reason for your visit</option> 
+                                            </select>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="form-group row">
+                                            <label for="timeIn-display" class="col-4 col-form-label">Time In</label> 
+                                            <div class="col-8">
+                                              <input id="timeIn-display" name="timeIn-display" class="form-control here" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="status-display" class="col-4 col-form-label">Status</label> 
+                                            <div class="col-8">
+                                                <input id="status-display" name="status-display"  class="form-control here" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="comments" class="col-4 col-form-label">Comments</label> 
+                                            <div class="col-8">
+                                              <input id="comments" name="comments" placeholder="Additional info" class="form-control here" type="text">
+                                            </div>
+                                          </div> 
+                                          <div class="form-group row">
+                                            <div class="offset-4 col-8">
+                                              <button name="submit" type="submit" class="btn btn-primary">Update Visitor</button>
+                                            </div>
+                                          </div>
+                                        </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+          </section> 
+        
+    </div>    
+
+   
+        
+    <footer class="bg-light">
+        <div class="container py-3 py-sm-5">
+          <div class="row justify-content-center ">
+              <div class="col-12 col-sm-6 col-lg-3">
+                    <h6>Quick links</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" >Home</a></li>
+                        <li class="list-unstyled-item"><a href="#" >What's new?</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Support</a></li>
+                        <li class="list-unstyled-item"><a href="#" >My account</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Unsubscribe</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Information</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" >About us</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Jobs</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Press info</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Contact</a></li>
+                        <li class="list-unstyled-item"><a href="#" >Partnership</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Follow us</h6>      
+                    <ul class="list-unstyled ">
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-facebook mr-2" aria-hidden="true"></i>Facebook</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-instagram mr-2" aria-hidden="true"></i>Instagram</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-twitter mr-2" aria-hidden="true"></i>Twitter</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-youtube mr-2" aria-hidden="true"></i>YouTube</a></li>
+                        <li class="list-unstyled-item"><a href="#" ><i class="fa fa-fw fa-linkedin mr-2" aria-hidden="true"></i>LinkedIn</a></li>
+                    </ul>
+               </div>
+              
+               <div class="col-12 col-sm-6 col-lg-3 ">
+                    <h6>Our location:</h6>      
+                    <address>
+                        <strong>VMS Works</strong><br>
+                        7000 SW 23rd St<br>
+                        Miami, FL 33155<br>
+                        <i class="fa fa-phone mr-1"></i><a href="tel:+12127363100">(786) 736-3100</a><br>
+                        <i class="fa fa-inbox mr-1"></i><a href="mailto:info@domain.com">info@vmsworks.com</a><br>
+                    </address>
+                </div> 
+            </div>
+            
+            <div class="row justify-content-center">
+                
+                <div class="col-12 col-sm-6 col-lg-9">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">&copy; 2019 VMS Works, Inc.</li>
+                        <li class="list-inline-item">All rights reserved.</li>
+                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="dropdown dropup">
+                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-language mr-2" aria-hidden="true"></i>Change language</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#" class="dropdown-item small px-1">English</a>
+                            <a href="#" class="dropdown-item small px-1">Spanish</a>
+                            <a href="#" class="dropdown-item small px-1">French</a>
+                            <a href="#" class="dropdown-item small px-1">German</a>
+                        </div>
+                    </div>
+                </div>                              
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/api.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js" integrity="sha256-MhIEydYjM8X/lfw31uxgXHB5BCo+bQX6BmFJYmzty7w=" crossorigin="anonymous"></script>
+      
+   
+  </body>
+</html>
